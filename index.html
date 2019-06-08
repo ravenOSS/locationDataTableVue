@@ -6,28 +6,27 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <!-- Load required Bootstrap and BootstrapVue CSS -->
-<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
-<link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
+  <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap/dist/css/bootstrap.min.css" />
+  <link type="text/css" rel="stylesheet" href="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.min.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
-    
-<section id="app" class="section container">
-  <ul>
-  <li v-for="location in locations">
-          {{ location.city }}
-  </li>
-</ul>
-</section>
-
+    <section id="app" class="section container">   
+      <template>
+        <div>
+          <b-table striped hover v-bind:locations="locations"></b-table>
+        </div>
+      </template>
+    </section>
+  
   <script>
     const app = new Vue({
     el: '#app',
-    data : { 
-      locations: '',
+    data: { 
+      locations: [],
     },
 
       methods: {
