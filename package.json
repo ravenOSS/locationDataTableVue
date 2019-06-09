@@ -1,0 +1,29 @@
+{
+  "name": "locationdatatablevue",
+  "version": "1.0.0",
+  "description": "Exploring vue.js with bootstrap-vue",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ravenOSS/locationDataTableVue.git"
+  },
+  "keywords": [
+    "Vue",
+    "Bootstrap-Vue",
+    "datatable"
+  ],
+  "author": "DJR / ravenOSS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ravenOSS/locationDataTableVue/issues"
+  },
+  "homepage": "https://github.com/ravenOSS/locationDataTableVue#readme"
+}
